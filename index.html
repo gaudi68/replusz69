@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+  
+  <meta content="text/html; charset=ISO-8859-2" http-equiv="content-type"><title>replusz</title></head><body style="background-color: black;">
+<form style="font-weight: bold; color: rgb(255, 102, 0);" name="formcalc">
+Num 1: <input name="txtnum1" type="text"> <br>
+Num 2: <input name="txtnum2" type="text"> <br>
+Re : <input name="txtres" type="text"> <img style="width: 100px; height: 390px;" alt="asd" src="kep.png" align="left"><br>
+  <input value="GO" onclick="repValues()" type="button"></form>
+
+<script style="font-weight: bold; color: rgb(255, 102, 0);" type="text/javascript">
+
+function repValues()
+{
+var num1, num2, res;
+num1=Number(document.formcalc.txtnum1.value);
+num2=Number(document.formcalc.txtnum2.value);
+res=num1*num2/(num1+num2);
+document.formcalc.txtres.value=res;
+}
+</script>
+</body></html>
